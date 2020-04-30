@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Querys>
+
+	<!-- Create table User Query -->
+	<query id="create_User_table">
+    <![CDATA[	
+	create table User(
+		username varchar(46) NOT NULL,
+    	password varchar(46) NOT NULL,
+    	email varchar(46) UNIQUE,
+    	type varchar(46) NOT NULL default 'user',
+    
+		constraint userPK_1 primary key (username),
+		constraint userCK_1 check (type = 'admin' || type = 'user')
+	);
+	]]>
+	</query>
+
+	<!-- Create table games Query -->
+	<query id="create_games_table">
+    <![CDATA[		
+	create table games(
+		gameID int NOT NULL,
+    	gameName varchar(46) NoT NULL,
+    	gameType varchar(46),
+    	price float,
+
+	constraint gamesPK_1 primary key (gameID)
+	); 
+	]]>
+	</query>
+
+	<!-- Create table feedback Query -->
+	<query id="create_feedback_table">
+    <![CDATA[		
+	CREATE TABLE feedback (
+  		feedbackid int NOT NULL,
+  		fname varchar(20) NOT NULL,
+  		lname varchar(20) NOT NULL,
+  		email varchar(45) NOT NULL,
+  		gname varchar(20) NOT NULL,
+  		originality varchar(10) NOT NULL,
+  		fun varchar(10) NOT NULL,
+  		comment varchar(1000) NOT NULL,
+  	
+  		PRIMARY KEY (feedbackid)
+	); 
+	]]>
+	</query>
+	
+	<!-- Create table payment Query -->
+	<query id="create_payment_table">
+    <![CDATA[
+     create table Payment
+	 (	
+		UserID varchar(30) not null,
+		UserName Varchar(30),
+		GameID varchar(30),
+		GamePrice varchar(30),
+	    PayMethod varchar(30),
+		CardNumber varchar(30),
+		SecurityCode varchar(30),
+		ExpiarationMonth varchar(30),
+	    ExpiarationYear varchar(30),
+	
+		CONSTRAINT pk1 PRIMARY KEY (UserID)
+ 
+	 );
+     ]]>
+	 </query>
+
+	<!-- DROP TABLE payment Query -->
+	<query id="drop_payment_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS payment 
+        ]]>
+	</query>
+
+	<!-- Select all payment Details Query -->
+	<query id="insert_paymnet">
+        <![CDATA[
+          	insert into payment (UserID, UserName, GameID, GamePrice, PayMethod, CardNumber, SecurityCode, ExpiarationMonth, ExpiarationYear) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular payment by id Query -->
+	<query id="paymentDetails_by_id">
+         <![CDATA[        
+            select * from payment where payment.UserID = ?
+        ]]>
+	</query>
+
+	<!-- Select all paymentDetails -->
+	<query id="all_payment">
+         <![CDATA[        
+            select * from payment
+        ]]>
+	</query>
+
+	<!-- Delete a particular paymentHistory by id Query -->
+	<query id="delete_payment">
+         <![CDATA[        
+           DELETE FROM Payment WHERE UserID= ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular cardNumber by id Query -->
+	<query id="update_cardNumber">
+         <![CDATA[        
+            UPDATE Payment
+			SET CardNumber = ?
+			WHERE UserID = ?
+        ]]>
+	</query>
+	
+		<!-- Get payment IDs Query -->
+	<query id="payment_ids">
+         <![CDATA[        
+            select UserID from payment 
+        ]]>
+	</query>
+
+</Querys>

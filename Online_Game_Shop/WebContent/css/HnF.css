@@ -1,0 +1,77 @@
+body{
+background: url("../images/1.jpg") 0px 0px no-repeat;
+background-size:cover;
+background-attachment: fixed;
+}
+
+@font-face{
+font-family: "Audiowide-Regular";
+src:url(../fonts/Audiowide-Regular.ttf);
+}
+@font-face{
+font-family: "Asap-Regular";
+src:url(../fonts/Asap-Regular.ttf);
+}
+
+.padding-all{
+padding:0px;
+}
+
+.header {
+background-color: black;	
+text-align: left;
+padding-bottom:15px;
+}
+.header h1 img{
+width:40px;
+}
+
+p ,a{
+font-family: "Asap-Regular";
+}
+
+.header h1 {
+font-size:50px;
+color: #fff;
+font-family: "Audiowide-Regular";
+letter-spacing:3px;
+margin:0 auto;
+}
+
+.footer{
+text-align: center;
+padding-top:75px;
+letter-spacing:1.6px;
+line-height:22px;
+}
+.footer p {
+font-size: 16px;
+color: #fff;
+margin: 0px;
+letter-spacing:1.4px;
+}
+
+.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav_bar li {
+    float: left;
+}
+
+.nav_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.nav_bar li a:hover {
+    background-color: #111;
+}

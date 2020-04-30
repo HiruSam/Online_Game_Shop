@@ -1,0 +1,121 @@
+.design{
+padding-top: 100px;	
+width:36%;
+margin:0 auto;
+}
+
+.add_box{
+padding: 50px 40px;
+text-align: center;
+margin:0px;
+background: rgba(213, 218, 218, 0.18);
+color: #000;
+margin:0 auto;		
+}
+
+
+.add_box label{
+font-size: 20px;
+font-family: "Arial";
+letter-spacing:1.6px;
+color:#fff;	
+}
+
+
+.add_box input[type="text"]{
+padding: 13px 10px;
+width: 92.5%;
+outline: none;
+background:transparent;
+border:0px;
+border-bottom: 1px solid #fff;
+border-radius: 0px;
+font-size: 16px;
+font-family: "Arial";
+letter-spacing:1.6px;
+color:#000;	
+}
+
+.add_box input[type="submit"]{
+font-size: 18px;
+padding: 10px 20px;
+letter-spacing:1.2px;
+border: none;
+text-transform: capitalize;
+outline: none;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+background: rgba(91, 157, 500, 0.76);;
+color: #fff;
+cursor: pointer;
+margin: 0 auto;
+font-family: "Asap-Regular";
+-webkit-transition-duration: 0.2s;
+transition-duration: 0.2s;
+}
+
+.add_box input[type="submit"]:hover {
+ -webkit-transition-duration: 0.2s;
+ transition-duration: 0.2s;
+ background:rgba(90, 200, 90, 90);
+}
+
+.add_box input[type="reset"]{
+font-size: 18px;
+padding: 10px 20px;
+letter-spacing:1.2px;
+border: none;
+text-transform: capitalize;
+outline: none;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+background: rgba(91, 157, 500, 0.76);;
+color: #fff;
+cursor: pointer;
+margin: 0 auto;
+font-family: "Asap-Regular";
+-webkit-transition-duration: 0.2s;
+transition-duration: 0.2s;
+}
+
+.add_box input[type="reset"]:hover {
+ -webkit-transition-duration: 0.2s;
+ transition-duration: 0.2s;
+ background:rgba(90, 200, 90, 90);
+}
+
+
+.list_box input[type="submit"]{
+	
+font-size: 18px;
+padding: 10px 20px;
+letter-spacing:1.2px;
+border: none;
+text-transform: capitalize;
+outline: none;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+background: rgba(91, 157, 500, 0.76);;
+color: #fff;
+cursor: pointer;
+margin: 0 auto;
+font-family: "Asap-Regular";
+-webkit-transition-duration: 0.2s;
+transition-duration: 0.2s;
+}
+
+.list_box input[type="submit"]:hover {
+ -webkit-transition-duration: 0.2s;
+ transition-duration: 0.2s;
+ background:rgba(90, 200, 90, 90);
+}
+
+.heading{
+font-size: 20px;
+font-family: "Arial";
+letter-spacing:1.6px;
+color:#fff;		
+}
